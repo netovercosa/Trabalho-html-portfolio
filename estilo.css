@@ -1,0 +1,108 @@
+/* Estilo global do site */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho e menu */
+header {
+    background: #2c3e50;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+/* Links do menu */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;         /* espaço interno */
+    border: 2px solid white;  /* borda branca */
+    border-radius: 6px;       /* cantos arredondados */
+    transition: all 0.3s;
+}
+
+nav ul li a:hover {
+    background: white;        /* fundo branco ao passar o mouse */
+    color: #2c3e50;           /* texto escuro no hover */
+}
+
+/*nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}*/
+
+/* Conteúdo principal */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Títulos */
+h1, h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+/* Formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #f39c12;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    background: #2c3e50;
+    color: white;
+}
+
