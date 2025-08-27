@@ -1,23 +1,15 @@
-/* Estilo global do site */
-
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
 body {
-    background-color: #f9f9f9;
-    color: #333;
+    background: #0d1b2a;
+    color: #e0e1dd;      
     line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
 /* Cabeçalho e menu */
 header {
-    background: #2c3e50;
-    padding: 15px;
+    background: #1b263b;
+    padding: 15px 0;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.5);
 }
 
 nav ul {
@@ -26,83 +18,95 @@ nav ul {
     justify-content: center;
     gap: 20px;
 }
-/* Links do menu */
+li a {
+    color: white; 
+}
+
 nav ul li a {
-    color: white;
+    color: #fdfdfd;
     text-decoration: none;
     font-weight: bold;
-    padding: 8px 15px;         /* espaço interno */
-    border: 2px solid white;  /* borda branca */
-    border-radius: 6px;       /* cantos arredondados */
+    padding: 8px 15px;
+    border: 2px solid white;
+    border-radius: 8px;
     transition: all 0.3s;
 }
 
 nav ul li a:hover {
-    background: white;        /* fundo branco ao passar o mouse */
-    color: #2c3e50;           /* texto escuro no hover */
+    background: white;
+    color: #3d4e6d;
 }
 
-/*nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
+nav ul li a.active {
 
-nav ul li a:hover {
-    color: #f39c12;
-}*/
+    background: white;
+    color: #1b263b;
+}
 
 /* Conteúdo principal */
 main {
     max-width: 900px;
     margin: 40px auto;
     padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    background: #1b263b;
+    border-radius: 12px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.6);
 }
 
 /* Títulos */
 h1, h2 {
+    color: white;
     margin-bottom: 15px;
-    color: #2c3e50;
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 12px;
+    display: inline-block; 
+    background: rgba(255, 255, 255, 0.05); 
+}
+
+/* Parágrafos */
+p, li {
+    font-size: 18px;
 }
 
 /* Formulário de contato */
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
+}
+
+form label {
+    font-weight: bold;
+    color: white;
 }
 
 form input, form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
     font-size: 16px;
+    background: #e0e1dd;
+    color: #18314c;
+}
+
+form input:focus, form textarea:focus {
+    outline: 2px solid #f39c12;
+    background: white;
 }
 
 form button {
-    padding: 10px;
-    background: #2c3e50;
-    color: white;
+    padding: 12px;
+    background: #f39c12;
+    color: #0d1b2a;
+    font-weight: bold;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: 0.3s;
 }
 
 form button:hover {
-    background: #f39c12;
-}
-
-/* Rodapé */
-footer {
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-    background: #2c3e50;
-    color: white;
+    background: #ffcc00;
 }
 
